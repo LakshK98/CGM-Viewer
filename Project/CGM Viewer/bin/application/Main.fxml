@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="537.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Button fx:id="selectCGMBtn" layoutX="36.0" layoutY="77.0" mnemonicParsing="false" onAction="#selectCGMAction" text="Select CGM" />
+      <Button fx:id="displayBtn" layoutX="404.0" layoutY="463.0" mnemonicParsing="false" onAction="#displayBtnAction" text="Display" visible="false" />
+      <TextArea fx:id="editTextArea" layoutX="36.0" layoutY="164.0" prefHeight="272.0" prefWidth="429.0" visible="false" />
+      <Button fx:id="saveBtn" layoutX="338.0" layoutY="463.0" mnemonicParsing="false" onAction="#saveBtnAction" text="Save" visible="false" />
+      <Label fx:id="invalidFileLabel" layoutX="338.0" layoutY="82.0" text="Invalid File" textFill="RED" visible="false">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="editLabel" layoutX="36.0" layoutY="138.0" text="Edit CGM" visible="false" />
+      <TextField fx:id="selectedFileTextField" editable="false" layoutX="143.0" layoutY="77.0" />
+      <Label fx:id="saveLabel" layoutX="276.0" layoutY="468.0" text="Unsaved" visible="false" />
+      <Label fx:id="invalidCGMLabel" layoutX="148.0" layoutY="506.0" text="Unable to Display: Invalid CGM " textFill="RED" visible="false">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
